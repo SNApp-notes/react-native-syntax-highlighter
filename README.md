@@ -1,6 +1,6 @@
-# React Native Syntax Highlighter (fork)
+# React Native Syntax Highlighter (SNApp fork)
 
-Syntax highlighting component for `React Native` using <a href="https://github.com/conorhastings/react-syntax-highlighter">`react-syntax-highlighter`</a>
+Syntax highlighting component for `React Native` using [`react-syntax-highlighter`](https://github.com/conorhastings/react-syntax-highlighter).
 
 ## With Highlight.js vdom
 
@@ -12,32 +12,33 @@ Syntax highlighting component for `React Native` using <a href="https://github.c
 
 ## Install
 
-`npm install rn-syntax-highlighter --save`
-
+```bash
+npm install @snapp-notes/react-native-syntax-highlighter
+```
 
 ## Use
 
 ### props
-Accepts all of the same props as <a href='https://github.com/react-syntax-highlighter/react-syntax-highlighter'> `react-syntax-highlighter`</a> with three additional props.
+Accepts all of the same props as [`react-syntax-highlighter`](https://github.com/conorhastings/react-syntax-highlighter) with three additional props.
 * `fontFamily` - the font family to use for syntax text.
 * `fontSize` - the fontSize for syntax text.
-* `highligter` - defaults to rendering with vdom created from highlightjs, but can pass in `prism` as alternate option. You can see more about dealing with the prism highlighter in the docs for <a href='https://github.com/react-syntax-highlighter/react-syntax-highlighter'>react-syntax-highlighter</a> but one of the main uses would be better support for jsx
+* `highligter` - defaults to rendering with vdom created from highlightjs, but can pass in `prism` as alternate option. You can see more about dealing with the prism highlighter in the docs for [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter) but one of the main uses would be better support for jsx
 
 ### Example
 
 ```js
-import SyntaxHighlighter from 'rn-syntax-highlighter';
+import SyntaxHighlighter from '@snapp-notes/react-native-syntax-highlighter';
 /*by default component uses hljs so access hljs styles, import from /prism for prism styles */
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 const Component = () => {
   const codeString = '(num) => num + 1';
-  return <SyntaxHighlighter 
-  	language='javascript' 
-  	style={docco}
-  	highlighter={"prism" || "hljs"}
+  return <SyntaxHighlighter
+    language='javascript'
+    style={docco}
+    highlighter={"prism" || "hljs"}
   >
-  	{codeString}
-  </SyntaxHighlighter>;  
+    {codeString}
+  </SyntaxHighlighter>;
 }
 ```
 
@@ -50,7 +51,7 @@ Some of the react-syntax-highlighter props are not currently supported by the mo
 - lineNumberContainerStyle
 - lineNumberStyle
 
-## Styles Available -- hljs 
+## Styles Available -- hljs
 
 * agate
 * androidstudio
@@ -156,7 +157,7 @@ Some of the react-syntax-highlighter props are not currently supported by the mo
 * hopscotch
 * pojoaque
 * vs
-* xonokai 
+* xonokai
 
 ## LICENSE
 Copyright (c) 2019 Conor Hastings<br/>
