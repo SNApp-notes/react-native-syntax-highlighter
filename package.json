@@ -1,5 +1,5 @@
 {
-  "name": "rn-syntax-highlighter",
+  "name": "@snapp-notes/react-native-syntax-highlighter",
   "version": "2.3.0",
   "description": "a react native component for syntax highlighting",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcubic/rn-syntax-highlighter.git"
+    "url": "git+https://github.com/SNApp-notes/react-native-syntax-highlighter.git"
   },
   "keywords": [
     "react",
@@ -29,9 +29,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jcubic/rn-syntax-highlighter/issues"
+    "url": "https://github.com/SNApp-notes/react-native-syntax-highlighter/issues"
   },
-  "homepage": "https://github.com/jcubic/rn-syntax-highlighter#readme",
+  "homepage": "https://github.com/SNApp-notes/react-native-syntax-highlighter#readme",
   "dependencies": {
     "react-syntax-highlighter": "^15.5.0"
   },
